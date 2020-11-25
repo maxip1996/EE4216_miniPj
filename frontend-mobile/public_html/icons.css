@@ -1,0 +1,90 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Nov 13, 2020, 2:02:32 PM
+    Author     : Dutliff
+*/
+
+
+.icons,
+.icons:visited {
+    width: 50%;
+    font-size: 200%;
+    padding: 1%;
+    margin: 2%;
+    display: flex;
+    border-radius: 100%;
+    transition: all .2s;
+}
+
+.iconsC,
+.iconsC:visited {   
+    border-radius: 20px;
+    padding:5px;
+    margin-top:10px;
+    margin-left:10px;
+    margin-right:10px;
+    display:none;
+    width: 50%;
+    right:50%;
+    height:10px;
+    font-size: 100%;
+    transition: all .2s;
+}
+
+.iconsNotes {
+    font-size: 250%;
+    padding: 1%;
+    margin: 2%;
+    float: right;
+    border-radius: 100%;
+    transition: all .2s;
+    visibility: hidden;
+}
+
+
+.iconsC:hover, .iconsNotes:hover,.icons:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.iconsC:active, .iconsNotes:active,.icons:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.icons-white {
+    background-color: #fff;
+    color: #777;
+}
+
+
+.iconsC::after, .iconsNotes::after, .icons::after {
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 20%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all .4s;
+}
+
+.icons-white::after {
+    background-color: #fff;
+}
+
+.iconsC:hover::after, .iconsNotes:hover::after, .icons:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+}
+
+
+
+.color-pink{
+    color:#FF90ED;
+}
+

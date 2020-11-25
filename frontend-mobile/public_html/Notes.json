@@ -1,0 +1,92 @@
+[
+      {
+    "id": 0,
+    "name": "This is a User Guide",
+    "text": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+    "importance": 1,
+    "favourite": true,
+    "colour": "#128734",
+    "font_size": 12
+  },
+  {
+    "id": 1,
+    "name": "Click me to get Started",
+    "text": "The second button allows you to edit me, Click again to save changes",
+    "importance": 1,
+    "favourite": true,
+    "colour": "#908712",
+    "font_size": 12
+  },
+  {
+    "id": 2,
+    "name": "Like Your Notes!!",
+    "text": "Click the heart to like a note, or unlike a note",
+    "importance": 4,
+    "favourite": true,
+    "colour": "#129878",
+    "font_size": 12
+  },
+  {
+    "id": 3,
+    "name": "Delete???",
+    "text": "just click the delete button. WOW! Are you sure you want to delete me, press red confirm tick",
+    "importance": 1,
+    "favourite": false,
+    "colour": "#898912",
+    "font_size": 12
+  },
+  {
+    "id": 4,
+    "name": "Lets Sort these notes!",
+    "text": "The sort button on the bottom left allows you to sort us by name in alphabetical order, press again to swap order",
+    "importance": 3,
+    "favourite": true,
+    "colour": "#789078",
+    "font_size": 12
+  },
+  {
+    "id": 5,
+    "name": "Wanna see liked notes",
+    "text": "Easy Just press the Heart, and toggle by clicking again",
+    "importance": 5,
+    "favourite": false,
+    "colour": "#106344",
+    "font_size": 12
+  },
+  {
+    "id": 6,
+    "name": "Pretty Clouds!!",
+    "text": "Click the edit button, Change the colour by clicking the coloured bar at the bottom and selecting your preferred colour. Confirm edit",
+    "importance": 2,
+    "favourite": false,
+    "colour": "#072306",
+    "font_size": 12
+  },
+  {
+    "id": 7,
+    "name": "Important Tasks",
+    "text": "If you have important task, just enter edit mode and change the number in that top cloud. You can then sort by that number by clicking the exclamation mark",
+    "importance": 1,
+    "favourite": true,
+    "colour": "#983434",
+    "font_size": 12
+  },
+  {
+    "id": 8,
+    "name": "New Notes",
+    "text": "Just press the big New Note Button and BOOM it will pop up",
+    "importance": 4,
+    "favourite": false,
+    "colour": "#987654",
+    "font_size": 12
+  },
+  {
+    "id": 9,
+    "name": "BIGGER LETTERS",
+    "text": "Edit mode, and change the number next to font size!",
+    "importance": 3,
+    "favourite": false,
+    "colour": "#123456",
+    "font_size": 25
+  }
+]

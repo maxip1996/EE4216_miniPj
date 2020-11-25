@@ -1,0 +1,44 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Nov 16, 2020, 9:28:09 PM
+    Author     : Dutliff
+*/
+
+*.modal-content{
+    background-color: #fefefe;
+    padding: 20px;
+    width: 70%;
+    border: 2px solid #888;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    animation-name: animate;
+    animation-duration: 2s
+}
+
+@keyframes animate {
+  from {opacity:0}
+  to {opacity:1}
+}
+
+.modal{
+    display:none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 1;
+    left:0;
+    top:0;
+    width: 100%;
+    height:100%;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.close{
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}

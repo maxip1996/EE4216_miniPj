@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html onscroll="showHeaders()">
+    <head>
+        <title>Mobile App</title>
+        <meta name="viewport" content="width=width, initial-scale=0.7">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3pro.css">
+        <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-teal.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="icons.css">
+        <link rel="stylesheet" href="lab1css.css">
+        <link rel="stylesheet" href="cloud.css">
+        <link rel="stylesheet" href="modal.css">
+        <link rel="stylesheet" href="buttons.css">
+    </head>
+    <body >
+
+        <div id="login" >
+            <nav class="w3-sidebar w3-bar-block w3-card" id="mySidebar">
+                <div class="buffer_side"></div>
+                <span class="logFields">Username:</span>
+                <input v-model=name class="logFields logBor">
+                <span class="logFields">Password:</span>
+                <input v-model=password class="logFields logBor" type="password">
+                <span class="newpass logFields">Confirm Password:</span>
+                <input class="newpass logFields logBor" v-model=repassword type="password">
+                <span  class="newpass color-red">Passwords do not match!!</span>
+                <button @click="login()" onclick="" class="login">login</button>
+                <button @click="createAccount()" onclick="" class="login" id="new">New Profile</button>
+            </nav>
+        </div>
+
+
+        <header class="w3-top header" id="myHeader">
+            <h1>CloudNotes</h1>
+            <div class="box-1">
+                <div class="btn btn-one" onclick="Sidebar()">
+                    <span>Log in</span>
+                </div>
+            </div>
+        </header>
+
+        <div id="app" >
+            <div class="width">
+                <div class="buffer_top" ></div>
+                <blog-post v-for="mpost in likes"  
+                           v-bind:id="mpost.id"
+                           v-bind:key="mpost.id"
+                           v-bind:post="mpost">
+                </blog-post>
+            </div>
+
+            <div id="buffer"></div>
+
+            <div class="center">
+                <div @click="add()" onclick="" class="addbtn addbtn-white addbtn- animate">New Note</div>
+            </div>
+            <div>
+                <footer class="w3-bottom footer" id="myFooter">
+                    <span @click="sort('name')" id="name" class="icons icons-white icons- animate center icons glyphicon glyphicon-sort"></span>
+                    <span @click="fav()" onclick="" id="favourite" class="icons icons-white icons- animate center icons glyphicon glyphicon-heart"></span>
+                    <span @click="sort('importance')" id="importance" onclick="" class="icons icons-white icons- animate center icons glyphicon glyphicon-exclamation-sign"></span>
+                </footer>
+            </div>
+
+
+
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+        <script src="lab3scipt.js"></script>
+        <script src="login.js"></script>
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    </body>
+
