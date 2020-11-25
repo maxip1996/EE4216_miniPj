@@ -1,0 +1,73 @@
+<html>
+    <head>
+        <title>Sticky Notes</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Architects+Daughter">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <link rel="stylesheet" href="style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <div class="main-storage">
+
+            <div class="storage1">
+                <label for="username" id="userLabel" >username</label>
+                <input type="text" id="username" name="username">
+                <label for="password" id="passwordLabel">password</label>
+                <input type="password" id="password"  name="password"></br>
+                
+                <label for="greet" id="greeting"></label> 
+                <!--<button id="login_btn" class="btn btn-primary" onclick="load()">Login</button>-->
+                <button id="login_btn" class="btn btn-primary" onclick="login()">Login</button>
+                <button id="creat_user_btn" class="btn btn-primary" onclick="newAcc()">New user</button>
+                <button id="logout_btn" class="btn btn-primary" onclick="logout()">Logout</button>
+                
+
+                <button id="create_btn" class="btn btn-primary" onclick="typing()">Create Note</button>  
+            </div>
+            
+            <div class="storage2 "></div>
+            <div class="storage3">
+                <form>
+                    
+                    <textarea id="note-text" placholder="Write Note..." maxlength="96"></textarea>
+                    <svg id ="tick" width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-check2-square" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" d="M15.354 2.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L8 9.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+                        <path fill-rule="evenodd" d="M1.5 13A1.5 1.5 0 0 0 3 14.5h10a1.5 1.5 0 0 0 1.5-1.5V8a.5.5 0 0 0-1 0v5a.5.5 0 0 1-.5.5H3a.5.5 0 0 1-.5-.5V3a.5.5 0 0 1 .5-.5h8a.5.5 0 0 0 0-1H3A1.5 1.5 0 0 0 1.5 3v10z"/>
+                    </svg>
+                    <svg id ="cross" width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-x-square" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" d="M14 1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
+                        <path fill-rule="evenodd" d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+                    </svg>
+                    <input type="color" id="color" value="#ffffff"></input>
+                    <input type="number" id="width" placeholder="width" min="300" step="1"/>
+                    <input type="number" id="height" placeholder="height" min="250" step="1"/>                    
+                    <input type="number" id="size" placeholder="size" min="12" step="1"/>
+                </form>
+            </div>
+            <div class="storage4">
+                <form> 
+                    <textarea id="note-edit-text" placholder="Write Note..." maxlength="96"></textarea>
+                    <svg id ="tick-edit" width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-check2-square" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" d="M15.354 2.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L8 9.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+                        <path fill-rule="evenodd" d="M1.5 13A1.5 1.5 0 0 0 3 14.5h10a1.5 1.5 0 0 0 1.5-1.5V8a.5.5 0 0 0-1 0v5a.5.5 0 0 1-.5.5H3a.5.5 0 0 1-.5-.5V3a.5.5 0 0 1 .5-.5h8a.5.5 0 0 0 0-1H3A1.5 1.5 0 0 0 1.5 3v10z"/>
+                    </svg>
+                    <svg id ="cross-edit" width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-x-square" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" d="M14 1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
+                        <path fill-rule="evenodd" d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+                    </svg>
+                    <input type="color" id="color-edit" value="#ffffff"></input>
+                    <input type="number" id="width-edit" placeholder="width" min="300" step="1"/>
+                    <input type="number" id="height-edit" placeholder="height" min="250" step="1"/>
+                    <input type="number" id="size-edit" placeholder="size" min="12" step="1"/>
+                    
+                </form>
+            </div>            
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+        <script src="script.js"></script>
+        
+        <script src="https://cdn.staticfile.org/axios/0.18.0/axios.min.js"></script>
+    </body>
+</html>

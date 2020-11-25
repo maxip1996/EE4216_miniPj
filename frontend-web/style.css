@@ -1,0 +1,171 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.storage1{
+    margin-left: 2.5%;
+}
+.storage2{
+    
+    margin-top:15px;
+    margin-left: 2.5%; 
+    display:flex;
+    justify-content: flex-start;
+    flex-wrap:wrap;
+}
+
+.storage3{
+    display:none;
+    position: absolute;
+    top:30%;
+    left:30%;
+}
+.storage4{
+    display:none;
+    position: absolute;
+    top:30%;
+    left:30%;
+}
+#color{
+    position: absolute;
+    right: 7.5%;
+    top:90%;
+}
+#draggable{
+    position: absolute;
+}
+#width{
+    font-size:15px;
+    position: absolute;
+    width: 60px;
+    right: 50%;
+    top:90%;
+}
+#height{
+    font-size:15px;
+    position: absolute;
+    width: 60px;
+    right: 34%;
+    top:90%;
+}
+#login_btn{
+    position: absolute;
+    top: 10%;
+    left:2.5%
+}
+#logout_btn{
+    display:none;
+    position: absolute;
+    top: 10%;
+    left:2.5%
+}
+#greeting{
+    display:none;
+    position: absolute;
+    left:2.5%;
+    top:5%;
+}
+#password{
+    font-size: 18px;
+    position: absolute;
+    left:28%;
+    top:5%;
+}
+#username{
+    font-size: 18px;
+    position: absolute;
+    left:10%;
+    top:5%;
+}
+#userLabel{
+    position: absolute;
+    left:2.5%;
+    top:4.25%;
+}
+#passwordLabel{
+    position: absolute;
+    left:20%;
+    top:4.25%;
+}
+#creat_user_btn{
+    position: absolute;
+    top:10%;
+    left:7.5%    
+}
+#create_btn{
+    display: none;
+    position: absolute;
+    top:10%;
+    left:7.5%
+    
+}
+#width-edit{
+    font-size:15px;
+    position: absolute;
+    width: 60px;
+    right: 50%;
+    top:90%;
+}
+#height-edit{
+    font-size:15px;
+    position: absolute;
+    width: 60px;
+    right: 34%;
+    top:90%;
+}
+#size{
+    font-size:15px;
+    position: absolute;
+    width: 50px;
+    right: 20%;
+    top:90%;
+}
+#size-edit{
+    font-size:15px;
+    position: absolute;
+    width: 50px;
+    right: 20%;
+    top:90%;
+}
+#color-edit{
+    position: absolute;
+    right: 7.5%;
+    top:90%;
+}
+#tick{
+    position: absolute;
+    right: 17.5%;
+    top:5%;
+}
+#cross{
+    position: absolute;
+    right: 7.5%;
+    top:5%;
+}
+#cross-edit{
+    position: absolute;
+    right: 7.5%;
+    top:5%;
+}
+#tick-edit{
+    position: absolute;
+    right: 17.5%;
+    top:5%;
+}
+
+textarea{
+    width: 400;
+    height: 300;
+    padding:40px 25px 25px 25px;
+    
+}
+.main-storage{
+    width:97.5%;
+    margin:auto;
+}
+body{
+    background:#81d4fa;
+    font-family: "Architects Daughter";
+    font-size: 32px;
+}
